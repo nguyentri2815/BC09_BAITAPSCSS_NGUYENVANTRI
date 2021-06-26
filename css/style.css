@@ -1,0 +1,514 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+input,
+textarea,
+select,
+button {
+  outline: none;
+}
+
+input {
+  line-height: normal;
+}
+
+label,
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+html, body {
+  font-family: "Roboto", sans-serif;
+  font-size: 1rem;
+}
+
+@media (min-width: 1200px) {
+  .container, .container-lg, .container-md, .container-sm, .container-xl {
+    max-width: 1280px;
+    padding: 0 30px;
+  }
+}
+
+.header {
+  background: transparent;
+}
+
+.header a:hover {
+  color: #b61984;
+}
+
+.header .navbar-left .fa-bars {
+  font-size: 30px;
+}
+
+.header .navbar-brand {
+  max-width: 80px;
+}
+
+@media screen and (max-width: 1200px) {
+  .header .navbar-brand {
+    max-width: 60px;
+  }
+}
+
+.header .nav-link {
+  padding: 26px;
+  font-size: 13px;
+  font-family: "Montserrat", sans-serif;
+  line-height: 1;
+  color: #191919;
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
+.header .navbar-contact .btn {
+  position: relative;
+  z-index: 99;
+}
+
+.header .navbar-contact .btn {
+  padding: 1em 1.2em;
+  background: #b61984;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+.header .navbar-contact .btn:hover {
+  color: #b61984;
+  border-color: #b61984;
+}
+
+.header .navbar-contact .btn span {
+  position: relative;
+  z-index: 9;
+}
+
+.header .navbar-contact .btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+
+.header .navbar-contact .btn:hover::after {
+  background: #fff;
+  color: #b61984;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.header .navbar-contact .navbar-sosial a {
+  padding: 5px;
+  color: #191919;
+  font-size: 13px;
+}
+
+.footer {
+  background: url(.././img/footer_background.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  color: white;
+  padding: 8rem 0;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    padding: 7rem 0;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .footer {
+    padding: 6rem 0;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 5rem 0;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    padding: 4rem 0;
+  }
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li a {
+  display: block;
+  padding-bottom: 10px;
+}
+
+.footer ul li a:hover {
+  opacity: 0.8;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer p a {
+  padding: 5px;
+}
+
+.footer .footer-img {
+  top: 0;
+  left: 0;
+}
+
+.footer .container {
+  position: relative;
+  z-index: 99;
+}
+
+.footer h4 {
+  font-size: 1.55rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.footer .btn {
+  padding: 1rem 3rem;
+  background: white;
+  color: #b61984;
+  cursor: pointer;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  overflow: hidden;
+  width: 100%;
+  font-size: 13px;
+}
+
+.footer .btn:hover {
+  color: white;
+  border-color: #b61984;
+}
+
+.footer .btn span {
+  position: relative;
+  z-index: 9;
+}
+
+.footer .btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+
+.footer .btn:hover::after {
+  background: #b61984;
+  color: white;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.footer .btn:first-child {
+  background: #b61984;
+  color: white !important;
+}
+
+.banner {
+  height: 100vh;
+  --sizeh1: 3.8rem;
+  --sizeb: 1.1rem;
+}
+
+.banner-img {
+  position: absolute;
+  width: 100%;
+  left: 0;
+}
+
+.banner-img:first-child {
+  top: 0;
+}
+
+.banner-img:last-child {
+  bottom: 0;
+}
+
+.banner b {
+  font-size: var(--sizeb);
+  margin-bottom: 0.5em;
+  color: #b61984;
+}
+
+.banner h1 {
+  font-size: var(--sizeh1);
+  font-weight: 700;
+}
+
+@media screen and (max-width: 1199px) {
+  .banner {
+    --sizeh1: 3rem;
+    --sizeb: 1.1rem;
+  }
+  .banner .col-lg-6 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .banner {
+    --sizeh1: 2.5rem;
+    --sizeb: 1rem;
+  }
+  .banner .col-lg-6 {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .banner {
+    height: 80vh;
+    --sizeh1: 2rem;
+    --sizeb: 0.8rem;
+  }
+  .banner .col-lg-6 {
+    text-align: center;
+  }
+}
+
+.members {
+  background: #dcd1f3;
+}
+
+.members-img {
+  width: 100%;
+  bottom: 0;
+  left: 0;
+}
+
+.members .container {
+  position: relative;
+  z-index: 99;
+}
+
+.members-item {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+.members-item h3 {
+  font-size: 23px;
+  color: #191919;
+  font-weight: bold;
+}
+
+.members-item p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #181818;
+}
+
+.members-item img {
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+
+.members-item:hover {
+  -webkit-box-shadow: 0 30px 30px -10px #00000033;
+          box-shadow: 0 30px 30px -10px #00000033;
+}
+
+.members-item:hover img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.members-item b {
+  font-size: 12px;
+  color: #b61984;
+}
+
+.contact form {
+  -webkit-box-shadow: 0 30px 30px -10px #00000033;
+          box-shadow: 0 30px 30px -10px #00000033;
+  border-radius: 8px;
+}
+
+.contact form .form-control {
+  font-size: 0.8em !important;
+}
+
+.contact form .form-control:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+}
+
+.contact form i {
+  color: #b61984;
+}
+
+.contact form .input-group {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.3rem !important;
+}
+
+.contact form textarea {
+  outline: none;
+  width: 100%;
+  background: transparent;
+  line-height: 1;
+  display: block;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  padding: 1em 1em 1em 3.5em;
+  height: 90px;
+  line-height: 1.5;
+  font-size: 0.8em;
+}
+
+.contact form .fa-comment-alt {
+  left: 17px;
+  top: 15px;
+}
+
+.contact form .btn {
+  padding: 1rem 3rem;
+  background: #b61984;
+  color: white;
+  cursor: pointer;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  overflow: hidden;
+  font-size: 13px;
+}
+
+.contact form .btn:hover {
+  color: #b61984;
+  border-color: #b61984;
+}
+
+.contact form .btn span {
+  position: relative;
+  z-index: 9;
+}
+
+.contact form .btn::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0);
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  z-index: 8;
+  width: 100%;
+  height: 100%;
+  border-radius: 100px;
+}
+
+.contact form .btn:hover::after {
+  background: white;
+  color: #b61984;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.contact .container {
+  position: relative;
+  z-index: 9;
+}
+
+.contact .contact-img {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+/*# sourceMappingURL=style.css.map */

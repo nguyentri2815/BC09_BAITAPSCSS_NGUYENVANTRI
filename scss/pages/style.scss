@@ -1,0 +1,148 @@
+@import "../helpers/variables";
+@import "../base/reset";
+@import "../helpers/functions";
+@import "../helpers/mixins";
+@import "../components/header";
+@import "../components/footer";
+
+//banner
+.banner {
+  height: 100vh;
+  --sizeh1: 3.8rem;
+  --sizeb: 1.1rem;
+  &-img {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    &:first-child {
+      top: 0;
+    }
+    &:last-child {
+      bottom: 0;
+    }
+  }
+  & b {
+    font-size: var(--sizeb);
+    margin-bottom: 0.5em;
+    color: c("c0");
+  }
+  & h1 {
+    font-size: var(--sizeh1);
+    font-weight: 700;
+  }
+  @include maxW($lg-max) {
+    --sizeh1: 3rem;
+    --sizeb: 1.1rem;
+    & .col-lg-6 {
+      text-align: center;
+    }
+  }
+  @include maxW($md-max) {
+    --sizeh1: 2.5rem;
+    --sizeb: 1rem;
+    & .col-lg-6 {
+      text-align: center;
+    }
+  }
+  @include maxW($xs-max) {
+    height: 80vh;
+    --sizeh1: 2rem;
+    --sizeb: 0.8rem;
+    & .col-lg-6 {
+      text-align: center;
+    }
+  }
+}
+//members
+.members {
+  background: #dcd1f3;
+  &-img {
+    width: 100%;
+    bottom: 0;
+    left: 0;
+  }
+  & .container {
+    position: relative;
+    z-index: 99;
+  }
+  &-item {
+    transition: all 0.4s ease-in-out;
+    overflow: hidden;
+    border-radius: 8px;
+    & h3 {
+      font-size: 23px;
+      color: c("c2");
+      font-weight: bold;
+    }
+    & p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: c("c1");
+    }
+    & img {
+      transition: all 0.4s ease-in-out;
+    }
+    &:hover {
+      & img {
+        transform: scale(1.1);
+      }
+      box-shadow: 0 30px 30px -10px #00000033;
+    }
+    & b {
+      font-size: 12px;
+      color: c("c0");
+    }
+  }
+}
+//contact
+.contact {
+  form {
+    box-shadow: 0 30px 30px -10px #00000033;
+    border-radius: 8px;
+    .form-control {
+      font-size: 0.8em !important;
+      &:focus {
+        box-shadow: none;
+        outline: none;
+      }
+    }
+    & i {
+      color: c("c0");
+    }
+    .input-group {
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 0.3rem !important;
+    }
+    textarea {
+      outline: none;
+      width: 100%;
+      background: transparent;
+      line-height: 1;
+      display: block;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      border-radius: 20px;
+      padding: 1em 1em 1em 3.5em;
+      height: 90px;
+      line-height: 1.5;
+      font-size: 0.8em;
+    }
+    .fa-comment-alt {
+      left: 17px;
+      top: 15px;
+    }
+    .btn {
+      @include Button(1rem 3rem, white, c("c0"), c("c0"), white);
+      font-size: 13px;
+    }
+  }
+  .container {
+    position: relative;
+    z-index: 9;
+  }
+  .contact-img {
+    left: 0;
+    bottom: 0;
+    width: 100%;
+  }
+}
+

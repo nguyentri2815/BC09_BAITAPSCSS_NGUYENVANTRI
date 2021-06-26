@@ -1,0 +1,54 @@
+// mixins: text, button, input, table.....
+@mixin Button($padding, $c, $hover-c, $bg,$hover-bg) {
+  padding: $padding;
+  background: $bg;
+  color: $c;
+  cursor: pointer;
+  position: relative;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 1;
+  border: 1px solid transparent;
+  border-radius: 100px;
+  overflow: hidden;
+  &:hover {
+    color: $hover-c;
+    border-color: c('c0');
+  }
+  & span{
+    position: relative;
+    z-index: 9;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform:scale(0);
+    transition: all 0.3s ease-in-out;
+    z-index: 8;
+    width: 100%;
+    height: 100%;
+    border-radius: 100px;
+  }
+  &:hover::after {
+    background: $hover-bg;
+    color: $hover-c;
+    transform: scale(1);
+  }
+ 
+}
+
+@mixin maxW($args) {
+	@media screen and (max-width: $args) {
+		@content;
+	}
+}
+
+@mixin text($font-size, $font-family, $color, $line-height,$text-transform) {
+	font-size: $font-size;
+	font-family: $font-family;
+	line-height: $line-height;
+	color: $color;
+	text-transform: $text-transform;
+}

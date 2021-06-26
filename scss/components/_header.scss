@@ -1,0 +1,47 @@
+@import "../helpers/variables";
+@import "../base/reset";
+@import "../base/customize";
+@import "../helpers/functions";
+@import "../helpers/mixins";
+
+.header {
+ background: transparent;
+ & a:hover{
+   color: c('c0');
+ }
+ .navbar-left{
+   & .fa-bars{
+    font-size: 30px;
+   }
+ }
+ .navbar{
+   &-brand{
+     max-width: 80px;
+     @media screen and (max-width: 1200px){
+      max-width: 60px;
+   }
+   }
+ }
+ .nav-link{
+   padding: 26px;
+   @include text(13px ,$font-mont,c("c2"),1,capitalize);
+   font-weight: 600;
+ }
+ .navbar-contact{
+   & .btn{
+     position: relative;
+     z-index: 99;
+   }
+   .btn{
+     @include Button( 1em 1.2em,white,c('c0'),c('c0'),#fff);
+     font-size: 13px;
+   }
+   .navbar-sosial{
+      & a{
+        padding: 5px;
+        color: c("c2");
+        font-size: 13px;
+      }
+   }
+ }
+}
